@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textnombre"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textapellidos"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnombre" />
+
+    <EditText
+        android:id="@+id/textemail"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textapellidos" />
+
+    <EditText
+        android:id="@+id/textmensaje"
+        android:layout_width="205dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textemail" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="90dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toStartOf="@+id/textnombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apellidos"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="69dp"
+        android:text="Apellidos"
+        app:layout_constraintEnd_toStartOf="@+id/textapellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="90dp"
+        android:text="Email"
+        app:layout_constraintEnd_toStartOf="@+id/textemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="49dp"
+        android:text="Mensaje"
+        app:layout_constraintEnd_toStartOf="@+id/textmensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="84dp"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/limpiar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="84dp"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="263dp"
+        android:text="Suscribirse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensaje" />
+</androidx.constraintlayout.widget.ConstraintLayout>
