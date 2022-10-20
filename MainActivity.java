@@ -11,11 +11,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    
     public ArrayList<String> nombres = new ArrayList<>();
     public ArrayList<String> apellidos = new ArrayList<>();
     public ArrayList<String> email = new ArrayList<>();
     public ArrayList<String> mensaje = new ArrayList<>();
     public ArrayList<String> suscrito = new ArrayList<String>();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
