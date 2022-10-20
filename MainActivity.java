@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textemail = findViewById(R.id.textemail);
         TextView textmensaje = findViewById(R.id.textmensaje);
         CheckBox subcribirse = findViewById(R.id.sub);
+        
         Button button = (Button) findViewById(R.id.aceptar);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -43,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
 
                 boolean e = subcribirse.getLinksClickable();
 
+            }
+        });
+        
+        Button eliminar =(Button) findViewById(R.id.limpiar);
+        eliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textonombre.setText(" ");
+                textapellidos.setText(" ");
+                textemail.setText(" ");
+                textmensaje.setText(" ");
+                subcribirse.setChecked(false);
             }
         });
     }
